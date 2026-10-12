@@ -1,0 +1,13 @@
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Files
+.DS_Store
+Thumbs.db
