@@ -17,6 +17,17 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Chamado {
+    
+    @ManyToOne
+    @JoinColumn(name = "cliente_id", nullable = false)
+    private Usuario cliente;
+
+    @ManyToOne
+    @JoinColumn(name = "atendente_id")
+    private Usuario atendente;
+
+    @CreationTimestamp
+    private LocalDateTime dataCriacao;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
